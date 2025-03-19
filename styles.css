@@ -1,0 +1,40 @@
+/*El selector global aplica una configuración a nivel general, en esta opción, la propiedad box-sizing con el valor content-box, permite que cuando un elemento tenga un ancho específico, esa anchura se calcula únicamente basándose en el contenido del elemento, los valores de relleno y borde se añaden al ancho total, entonces, el elemento crece para acoplarse a estos valores*/
+
+/*El valor border-box por el contrario hace que el ancho total del elemento, incluido el relleno y el borde sea el ancho establecido explícitamente, entonces, el contenido del elemento se reducirá para hacer espacio para el relleno y el borde.*/
+* {
+    box-sizing: border-box;
+  }
+
+/*.gallery {
+    width: 50%;
+    border: 5px solid red; Con este codigo y el de abajo se muestran bordes para entender la teoría
+}
+
+img {
+    width: 100%;
+    padding: 5px;
+    border: 5px solid blue;
+}
+*/
+
+.header {
+    padding: 32px;
+    color: #fff;
+    background-color: #0a0a23;
+    text-align: center; /*Se centra el texto*/
+    text-transform: uppercase; /*Se cambia a mayúsculas*/
+    border-bottom: 4px solid #fdb347;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif; /*Se elimina margen del body*/
+    background-color: #f5f6f7;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    max-width: 350px; /*Hasta aquí las imagenes se adptan paso 14*/
+}
+
